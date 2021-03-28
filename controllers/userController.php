@@ -9,17 +9,15 @@ class UserController
 
     public function update()
     {
-
-    } 
+    }
 
     public function delete()
     {
-
     }
 
     public function showAll()
     {
-        require_once './models/user.php';
+        require_once './models/User.php';
 
         $user = new User();
 

@@ -1,6 +1,8 @@
 <?php
 
-class User
+require_once './models/_base.php';
+
+class User extends _Base
 {
     public $name;
     public $surname;
@@ -9,7 +11,7 @@ class User
 
     /**
      * Get the value of name
-     */ 
+     */
     public function getName()
     {
         return $this->name;
@@ -19,7 +21,7 @@ class User
      * Set the value of name
      *
      * @return  self
-     */ 
+     */
     public function setName($name)
     {
         $this->name = $name;
@@ -29,7 +31,7 @@ class User
 
     /**
      * Get the value of surname
-     */ 
+     */
     public function getSurname()
     {
         return $this->surname;
@@ -39,7 +41,7 @@ class User
      * Set the value of surname
      *
      * @return  self
-     */ 
+     */
     public function setSurname($surname)
     {
         $this->surname = $surname;
@@ -49,7 +51,7 @@ class User
 
     /**
      * Get the value of email
-     */ 
+     */
     public function getEmail()
     {
         return $this->email;
@@ -59,7 +61,7 @@ class User
      * Set the value of email
      *
      * @return  self
-     */ 
+     */
     public function setEmail($email)
     {
         $this->email = $email;
@@ -69,7 +71,7 @@ class User
 
     /**
      * Get the value of password
-     */ 
+     */
     public function getPassword()
     {
         return $this->password;
@@ -79,16 +81,11 @@ class User
      * Set the value of password
      *
      * @return  self
-     */ 
+     */
     public function setPassword($password)
     {
         $this->password = $password;
 
         return $this;
-    }
-
-    public function getAll()
-    {
-        echo "getting all users";
     }
 }
