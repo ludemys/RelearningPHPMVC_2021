@@ -1,3 +1,9 @@
 <?php
 
-echo '<h1>Hello world</h1>';
+require_once './controllers/userController.php';
+
+$controller = new UserController();
+
+$controller->showAll();
+
+$controller->create();
